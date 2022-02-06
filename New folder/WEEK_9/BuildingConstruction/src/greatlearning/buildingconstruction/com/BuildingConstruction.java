@@ -48,7 +48,7 @@ public class BuildingConstruction {
 		//System.out.println("Day: "+f);
 		for(int i=0; i<num; i++)
 		{ int f = i + 1;
-		System.out.println("Day:"+f);
+		System.out.println("\nDay:"+f);
 			for(int j=0; j<=i;j++)
 			{
 				if (array[j]==array3[i])
