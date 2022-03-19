@@ -22,11 +22,15 @@ public class StudentController {
 	@RequestMapping("/list")
 	public String listBooks(Model theModel) {
 		System.out.println("Request Recieved");
-		List<Student> theStudents = studentService.getAllStudents();
-		theModel.addAttribute("Students", theStudents);
+		
+		 List<Student> theStudents = studentService.getAllStudents();
+		 System.out.println(theStudents.size());
+		 theModel.addAttribute("liststudents", theStudents);
+			/* theModel.addAttribute("Students", theStudents); */
 		return "list-Students";
 	}
 
+	
 	@RequestMapping("/showFormForAdd")
 	public String showFormForAdd(Model theModel) {
 		// create model attribute to bind form data

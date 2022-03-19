@@ -35,6 +35,7 @@ public class StudentServiceImpl implements StudentService {
 	@SuppressWarnings("unchecked")
 	public List<Student> getAllStudents() {
 		List<Student> students = session.createQuery("from Student").list();
+		System.out.println("students" + students.size());
 		return students;
 	}
 

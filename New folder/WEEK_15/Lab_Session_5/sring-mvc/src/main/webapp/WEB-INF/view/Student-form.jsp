@@ -21,7 +21,7 @@
 		<h3>Student Directory</h3>
 		<hr>
 		<p class="h4 mb-4">Student</p>
-		<form action="/spring-mvc/students/save" method="POST">
+		<form action="save" method="POST">
 
 			<!-- Add hidden form field to handle update -->
 			<input type="hidden" name="studentId" value="${Student.id}" />
@@ -37,7 +37,7 @@
 				<input type="text" name="country" value="${Student.country}" class="form-control mb-4 col-4" placeholder="Country">
 			</div>
 
-			<button type="submit" class="btn btn-info col-2">Save</button>
+			<button type="submit"  class="btn btn-info col-2">Save</button>
 		</form>
 		<hr>
 		<a href="/spring-mvc/students/list">Back to Students List</a>
