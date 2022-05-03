@@ -1,0 +1,63 @@
+body{
+    margin: 0%;
+    height: auto;
+}
+header>h1{
+    background-color: red;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+footer{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    text-align: center;
+}
+#navigate{
+    position: sticky;
+    top: 0%;
+}
+
+.menu{
+    margin: 0%;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+.menu li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.menu li{
+    padding: 10px;
+    display: inline-block;
+}
+.menu li:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.menu li:nth-last-child(2) :hover #dropdown {
+    display: block;
+}
+
+#dropdown {
+    position: absolute;
+    width: auto;
+    max-width: 300px;
+    display: none;
+    background-color: whitesmoke;
+    padding: 0%;
+    top: 50px;
+}
+#dropdown li:hover {
+    display: block;
+    background-color: rgb(0, 0, 0, 0.7);;
+}
+#dropdown li a {
+    color: blue;
+    font-size: 16px;
+}
